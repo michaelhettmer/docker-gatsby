@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/MichaelHettmer/docker-gatsby/compare/v1.1.1...v1.1.2) (2020-02-12)
+
+
+### Bug Fixes
+
+* add autoconf build dependency ([d047f98](https://github.com/MichaelHettmer/docker-gatsby/commit/d047f98a73f15daa4f76e8afd408ad82f44554f6))
+
 ## [1.1.1](https://github.com/MichaelHettmer/docker-gatsby/compare/v1.1.0...v1.1.1) (2020-02-12)
 
 
