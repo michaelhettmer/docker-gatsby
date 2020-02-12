@@ -4,6 +4,7 @@ LABEL maintainer="Michael Hettmer - @michaelhettmer"
 LABEL description="empty description"
 
 # pin  build dependency versions to make image deterministic and reliable
+ENV GIT_VERSION 2.24.1-r0
 ENV PYTHON3_VERSION 3.8.1-r0
 ENV GPP_VERSION 9.2.0-r3
 ENV MAKE_VERSION 4.2.1-r2
@@ -12,6 +13,7 @@ ENV AUTOCONF_VERSION 2.69-r2
 
 # install necessary build dependencies
 RUN apk update && apk add --no-cache \
+    git=$GIT_VERSION \
     python3=$PYTHON3_VERSION \
     g++=$GPP_VERSION \
     make=$MAKE_VERSION \
