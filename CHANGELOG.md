@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/MichaelHettmer/docker-gatsby/compare/v1.1.0...v1.1.1) (2020-02-12)
+
+
+### Bug Fixes
+
+* remove redundant npm build dependency ([5781dda](https://github.com/MichaelHettmer/docker-gatsby/commit/5781dda7c5cf96364c83b2e585ae370d6f54d1a2))
+
 # [1.1.0](https://github.com/MichaelHettmer/docker-gatsby/compare/v1.0.0...v1.1.0) (2020-02-12)
 
 
