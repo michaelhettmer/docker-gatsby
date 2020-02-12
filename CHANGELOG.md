@@ -1,3 +1,11 @@
+## [1.1.3](https://github.com/MichaelHettmer/docker-gatsby/compare/v1.1.2...v1.1.3) (2020-02-12)
+
+
+### Bug Fixes
+
+* add missing automake build dependency ([9a12344](https://github.com/MichaelHettmer/docker-gatsby/commit/9a123443437ed00fc0732d2fd85bb6d828d5eaff))
+* add missing git build dependency ([c4efa95](https://github.com/MichaelHettmer/docker-gatsby/commit/c4efa95fc4161cac1d819433f724d79cf7224d64))
+
 ## [1.1.2](https://github.com/MichaelHettmer/docker-gatsby/compare/v1.1.1...v1.1.2) (2020-02-12)
 
 
