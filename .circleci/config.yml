@@ -1,0 +1,78 @@
+version: 2.1
+
+orbs:
+    docker: circleci/docker@0.5.20
+
+jobs:
+    checkout:
+        docker:
+            - image: circleci/node:12.15.0
+        steps:
+            - checkout
+            - restore_cache:
+                  keys:
+                      - v1-dependencies-{{ checksum "package.json" }}
+                      - v1-dependencies-
+            - run:
+                  name: Install v1-dependencies
+                  command: npm ci
+            - save_cache:
+                  paths:
+                      - node_modules
+                  key: v1-dependencies-{{ checksum "package.json" }}
+            - persist_to_workspace:
+                  root: ~/project
+                  paths:
+                      - .
+
+    build:
+        docker:
+            - image: circleci/node:12.15.0
+        steps:
+            - attach_workspace:
+                  at: ~/project
+            - setup_remote_docker:
+                  docker_layer_caching: false
+            - run:
+                  name: Build Docker Image
+                  command: docker build -t michaelhettmer/gatsby .
+            - run:
+                  name: Persist Docker Image
+                  command: docker save michaelhettmer/gatsby | gzip > docker_michaelhettmer_gatsby.tar.gz
+            - persist_to_workspace:
+                  root: ~/project
+                  paths:
+                      - docker_michaelhettmer_gatsby.tar.gz
+
+    release:
+        docker:
+            - image: circleci/node:12.15.0
+        steps:
+            - attach_workspace:
+                  at: ~/project
+            - setup_remote_docker:
+                  docker_layer_caching: false
+            - run:
+                  name: Load Docker Image
+                  command: docker load -i docker_michaelhettmer_gatsby.tar.gz
+            - run:
+                  name: Release Docker Image
+                  command: npx semantic-release
+
+workflows:
+    build:
+        jobs:
+            - checkout
+            - docker/hadolint:
+                  requires:
+                      - checkout
+                  dockerfiles: Dockerfile
+            - build:
+                  requires:
+                      - docker/hadolint
+            - release:
+                  requires:
+                      - build
+                  filters:
+                      branches:
+                          only: master

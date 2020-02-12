@@ -1,0 +1,16 @@
+{
+  "generator-mht": {
+    "promptValues": {
+      "ci": "CircleCI",
+      "repo": "GitHub",
+      "repoUserName": "MichaelHettmer",
+      "repoName": "docker-gatsby",
+      "dockerUserName": "michaelhettmer",
+      "authorName": "Michael Hettmer",
+      "moduleName": "gatsby",
+      "description": "empty description",
+      "devDep": false,
+      "vscode": true
+    }
+  }
+}

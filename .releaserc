@@ -1,0 +1,51 @@
+{
+    "branches": [
+        "master",
+        "next"
+    ],
+    "plugins": [
+        [
+            "@semantic-release/commit-analyzer",
+            {
+                "preset": "conventionalcommits"
+            }
+        ],
+        "@semantic-release/release-notes-generator",
+        "@semantic-release/changelog",
+        [
+            "@semantic-release/npm",
+            {
+                "npmPublish": false
+            }
+        ],
+        [
+            "semantic-release-docker",
+            {
+                "name": "michaelhettmer/gatsby"
+            }
+        ],
+        [
+            "@semantic-release/git",
+            {
+                "assets": [
+                    "package.json",
+                    "CHANGELOG.md"
+                ]
+            }
+        ],
+        [
+            "@semantic-release/github",
+            {
+                "assets": [
+                    {
+                        "path": "docker_michaelhettmer_gatsby.tar.gz",
+                        "label": "Docker image"
+                    }
+                ],
+                "assignees": [
+                    "MichaelHettmer"
+                ]
+            }
+        ]
+    ]
+}
