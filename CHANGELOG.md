@@ -1,3 +1,10 @@
+## [1.1.6](https://github.com/MichaelHettmer/docker-gatsby/compare/v1.1.5...v1.1.6) (2020-02-13)
+
+
+### Bug Fixes
+
+* add missing nasm build dependency ([f4cc638](https://github.com/MichaelHettmer/docker-gatsby/commit/f4cc638a8d82abc71e401f6087cdf8a94b4f3453))
+
 ## [1.1.5](https://github.com/MichaelHettmer/docker-gatsby/compare/v1.1.4...v1.1.5) (2020-02-13)
 
 
