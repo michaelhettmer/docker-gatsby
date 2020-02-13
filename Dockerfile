@@ -10,6 +10,7 @@ ENV GPP_VERSION 9.2.0-r3
 ENV MAKE_VERSION 4.2.1-r2
 ENV AUTOMAKE_VERSION 1.16.1-r0
 ENV AUTOCONF_VERSION 2.69-r2
+ENV LIBTOOL_VERSION 2.4.6-r7
 
 # install necessary build dependencies
 RUN apk update && apk add --no-cache \
@@ -19,6 +20,7 @@ RUN apk update && apk add --no-cache \
     make=$MAKE_VERSION \
     automake=$AUTOMAKE_VERSION \
     autoconf=$AUTOCONF_VERSION \
+    libtool=$LIBTOOL_VERSION \
     && rm -rf /var/cache/apk/*
 
 # pin node dependency versions to make image deterministic and reliable
