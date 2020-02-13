@@ -1,3 +1,10 @@
+## [1.1.5](https://github.com/MichaelHettmer/docker-gatsby/compare/v1.1.4...v1.1.5) (2020-02-13)
+
+
+### Bug Fixes
+
+* add missing pkgconf build dependency ([21ee903](https://github.com/MichaelHettmer/docker-gatsby/commit/21ee9030a8a0b49a674861de46a7055c8a819c3d))
+
 ## [1.1.4](https://github.com/MichaelHettmer/docker-gatsby/compare/v1.1.3...v1.1.4) (2020-02-13)
 
 
