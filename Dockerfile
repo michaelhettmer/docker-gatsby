@@ -12,6 +12,7 @@ ENV AUTOMAKE_VERSION 1.16.1-r0
 ENV AUTOCONF_VERSION 2.69-r2
 ENV LIBTOOL_VERSION 2.4.6-r7
 ENV PKGCONF_VERSION 1.6.3-r0
+ENV NASM_VERSION 2.14.02-r0
 
 # install necessary build dependencies
 RUN apk update && apk add --no-cache \
@@ -23,6 +24,7 @@ RUN apk update && apk add --no-cache \
     autoconf=$AUTOCONF_VERSION \
     libtool=$LIBTOOL_VERSION \
     pkgconf=$PKGCONF_VERSION \
+    nasm=$NASM_VERSION \
     && rm -rf /var/cache/apk/*
 
 # pin node dependency versions to make image deterministic and reliable
