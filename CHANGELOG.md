@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/MichaelHettmer/docker-gatsby/compare/v1.1.3...v1.1.4) (2020-02-13)
+
+
+### Bug Fixes
+
+* add missing libtool build dependency ([40aef6e](https://github.com/MichaelHettmer/docker-gatsby/commit/40aef6e003b64a35cba63d4759c7b30c3220905d))
+
 ## [1.1.3](https://github.com/MichaelHettmer/docker-gatsby/compare/v1.1.2...v1.1.3) (2020-02-12)
 
 
