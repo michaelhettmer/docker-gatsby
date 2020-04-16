@@ -1,3 +1,10 @@
+## [1.1.7](https://github.com/MichaelHettmer/docker-gatsby/compare/v1.1.6...v1.1.7) (2020-04-16)
+
+
+### Bug Fixes
+
+* **deps:** update alpine package dependency versions ([74c1654](https://github.com/MichaelHettmer/docker-gatsby/commit/74c16547c76819e91b6361123a9733206ca98aab))
+
 ## [1.1.6](https://github.com/MichaelHettmer/docker-gatsby/compare/v1.1.5...v1.1.6) (2020-02-13)
 
 
