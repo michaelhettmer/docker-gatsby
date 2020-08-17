@@ -1,3 +1,10 @@
+## [1.1.8](https://github.com/MichaelHettmer/docker-gatsby/compare/v1.1.7...v1.1.8) (2020-08-17)
+
+
+### Bug Fixes
+
+* drop to strict pinned apk package versions ([c4590a2](https://github.com/MichaelHettmer/docker-gatsby/commit/c4590a20286964ffa3697fa22a5f0a222be052a1))
+
 ## [1.1.7](https://github.com/MichaelHettmer/docker-gatsby/compare/v1.1.6...v1.1.7) (2020-04-16)
 
 
