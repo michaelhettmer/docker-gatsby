@@ -6,7 +6,7 @@ LABEL description="empty description"
 # pin build dependency versions to make image deterministic and reliable
 ENV GIT_VERSION 2.24
 ENV PYTHON3_VERSION 3.8
-ENV GPP_VERSION 9.2
+ENV GPP_VERSION 9.3
 ENV MAKE_VERSION 4.2
 ENV AUTOMAKE_VERSION 1.16
 ENV AUTOCONF_VERSION 2.69
