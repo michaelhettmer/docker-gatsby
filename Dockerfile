@@ -1,4 +1,4 @@
-FROM node:12.22.7-alpine3.11
+FROM node:16.13.0-alpine3.11
 
 LABEL maintainer="Michael Hettmer - @michaelhettmer"
 LABEL description="empty description"
