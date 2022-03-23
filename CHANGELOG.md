@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/MichaelHettmer/docker-gatsby/compare/v1.1.8...v1.2.0) (2022-03-23)
+
+
+### Features
+
+* **deps:** update base node image to v16 ([8a713cf](https://github.com/MichaelHettmer/docker-gatsby/commit/8a713cfd7c79d52f422f4f43eb819597868d411f))
+
 ## [1.1.8](https://github.com/MichaelHettmer/docker-gatsby/compare/v1.1.7...v1.1.8) (2020-08-17)
 
 
